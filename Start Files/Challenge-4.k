@@ -10,33 +10,35 @@ it should be able to scale a molehill or Mount Everest.
 
 import"turns";
 
-function GoThrough(){
-	move();
-	while(beepersInBag()){
+	function GoThrough(){
+			move();
+		while(beepersInBag()){
 		
-	climbMountain();
-	downMountain();
+			climbMountain();
+			downMountain();
 
-} 
+		} 
 }
 
 function climbMountain(){
-	while(frontIsBlocked()){
+		while(frontIsBlocked()){
 			turnLeft();
 			
-			if(frontIsClear()){
+		if(frontIsClear()){
 			move();
-			if(rightIsClear()){
+		if(rightIsClear()){
 			turnRight();	
 		 	move();
-			 
-			
-}		
-} 
-}			if(facingEast()){
+			 		
+		}		
+	} 
+}			
+		if(facingEast()){
 			putBeeper();
+		}
 }
-}
+
+
 function downMountain(){
 	while(frontIsClear()){
 		move();
@@ -46,6 +48,6 @@ function downMountain(){
 		turnLeft();
 }else{turnLeft();}
 		
-}
+	}
 }  
- 
+  
